@@ -4,7 +4,7 @@ import { CustomError } from "./custom-error";
 export class RequestValidationError extends CustomError {
     statusCode = 400;
     public errors: ValidationError[];
-
+    
     constructor(errors: ValidationError[]) {
         super('Error validating request data!');
         this.errors = errors;
